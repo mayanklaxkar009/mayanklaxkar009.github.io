@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Mayank Kumar Laxkar — Data & AI Engineer</title>
+<meta name="description" content="Mayank Kumar Laxkar — Senior Software Engineer & Azure Data Engineer building data pipelines and moving toward AI / GPU systems." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+<!-- ==================================================================== -->
+<!--  EDIT ONLY THE BLOCK BELOW                                            -->
+<!--  Change your text, links, jobs and skills here. Everything on the     -->
+<!--  page is built from this. You never need to touch the CSS or HTML.    -->
+<!--                                                                        -->
+<!--  PHOTO: leave photoUrl "" to show your initials. To use a real photo, -->
+<!--  upload it to the same repo (e.g. photo.jpg) and write "photo.jpg".   -->
+<!-- ==================================================================== -->
+<script>
+const DATA = {
+  profile: {
+    name: "Mayank Kumar Laxkar",
+    initials: "ML",
+    photoUrl: "",                       // e.g. "photo.jpg"
+    role: "Senior Software Engineer · Azure Data Engineering",
+    tagline: "6+ years turning raw, on-prem data into reliable cloud pipelines — now moving up the stack toward AI and GPU-accelerated systems.",
+    location: "Jaipur, India",
+    email: "mayanklaxkar008@gmail.com",
+    linkedin: "https://www.linkedin.com/in/mayank-laxkar",  // fix if different
+    github: "https://github.com/YOUR-USERNAME"              // put your username
+  },
+
+  // The animated graphic in the hero — the 4 things you do with data.
+  pipeline: [
+    { icon: "\u21e5", label: "Ingest",    note: "Event Hubs · Kafka" },
+    { icon: "\u2699", label: "Transform", note: "Spark · Databricks" },
+    { icon: "\u25a4", label: "Store",     note: "Data Lake · Azure SQL" },
+    { icon: "\u25c8", label: "Serve",     note: "Dashboards · APIs" }
+  ],
+
+  metrics: [
+    { n: "6+ yrs", l: "experience" },
+    { n: "45%",    l: "faster pipelines" },
+    { n: "40%",    l: "data availability" },
+    { n: "7\u00d7", l: "cloud certs" }
+  ],
+
+  experience: [
+    {
+      title: "Application Development Senior Analyst",
+      org: "Accenture · Jaipur, India",
+      when: "Dec 2022 — Present",
+      now: true,
+      clients: [
+        { name: "MYOB (Australia)", points: [
+          "Built an automated analytics pipeline in Azure, cutting processing time by 45%.",
+          "Led a cross-functional team on Azure Data Factory, improving data consistency by 30%.",
+          "Added observability with Azure Monitor & Log Analytics, reducing downtime by 25%."
+        ]},
+        { name: "ETS · Educational Testing Service (USA)", points: [
+          "Designed data validation frameworks, reducing anomalies by 35%.",
+          "Developed ETL pipelines in Azure Data Factory, improving availability by 40%.",
+          "Introduced Data Lake thin provisioning, cutting storage costs by 20%."
+        ]}
+      ]
+    },
+    {
+      title: "Application Development Analyst",
+      org: "Accenture · Gurugram, India",
+      when: "Oct 2021 — Nov 2022",
+      now: false,
+      clients: [
+        { name: "Telekom Malaysia", points: [
+          "Wrote SQL for analytics & reporting; tightened validation to cut errors by 20%.",
+          "Ran Agile delivery on Azure Boards and supported data governance (+10% compliance)."
+        ]}
+      ]
+    },
+    {
+      title: "Software Engineer",
+      org: "Tata Consultancy Services · Indore, India",
+      when: "Aug 2019 — Oct 2021",
+      now: false,
+      clients: [
+        { name: "Verizon (USA) · RBS / NatWest (UK)", points: [
+          "Built responsive UI in React, Redux & TypeScript with optimized virtual-DOM rendering.",
+          "Improved session performance on customer-facing banking apps by 50%."
+        ]}
+      ]
+    },
+    {
+      title: "B.Tech (Honours), Electrical Engineering — 75.85%",
+      org: "Poornima Institute of Engineering & Technology · Jaipur",
+      when: "2015 — 2019",
+      now: false,
+      clients: []
+    }
+  ],
+
+  projects: [
+    { emoji: "\u26a1", title: "Real-Time Data Ingestion",
+      desc: "Streaming pipeline on Azure Data Factory, Stream Analytics & Event Hubs — many sources in, actionable insight out, fast." },
+    { emoji: "\ud83d\udcc8", title: "Financial Market Data Pipeline",
+      desc: "Streaming pipeline over the Finnhub market-data API feeding a live analytics dashboard." }
+  ],
+
+  skills: [
+    { cat: "Languages",     items: ["Python","Java","C++","SQL","JavaScript","Bash","YAML"] },
+    { cat: "Cloud & Data",  items: ["Azure Data Factory","Databricks","Azure SQL","Data Lake","Apache Spark","Kafka","Cosmos DB","Google Cloud"] },
+    { cat: "ML & Platform", items: ["PyTorch","TensorFlow","Scikit-Learn","Pandas","Docker","Kubernetes","Git"] }
+  ],
+
+  certs: [
+    "Google Cloud — Professional Cloud Architect",
+    "Google Cloud — Professional ML Engineer",
+    "Google Cloud — Associate Cloud Engineer",
+    "Google Cloud — DevOps Engineer",
+    "Microsoft Azure — Security Fundamentals (SC-900)",
+    "Azure DevOps + Kubernetes (Coursera)"
+  ]
+};
+</script>
+<!-- ====================  END OF EDITABLE BLOCK  ======================== -->
+
+<style>
+  :root{
+    --bg:#080B14;
+    --panel:rgba(255,255,255,.035);
+    --panel-brd:rgba(255,255,255,.09);
+    --text:#EAEDF6;
+    --muted:#8C95AD;
+    --cyan:#22D3EE;
+    --violet:#8B5CF6;
+    --amber:#FBBF24;
+    --radius:16px;
+    --maxw:960px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    background:var(--bg);color:var(--text);
+    font-family:"Inter",system-ui,sans-serif;line-height:1.6;
+    -webkit-font-smoothing:antialiased;overflow-x:hidden;
+  }
+  .aurora{position:fixed;inset:0;z-index:-1;overflow:hidden}
+  .aurora span{position:absolute;border-radius:50%;filter:blur(90px);opacity:.5}
+  .aurora .a{width:520px;height:520px;background:var(--violet);top:-160px;left:-120px;animation:drift 22s ease-in-out infinite}
+  .aurora .b{width:460px;height:460px;background:var(--cyan);top:20%;right:-140px;animation:drift 26s ease-in-out infinite reverse}
+  .aurora .c{width:400px;height:400px;background:var(--amber);bottom:-160px;left:30%;opacity:.28;animation:drift 30s ease-in-out infinite}
+  @keyframes drift{0%,100%{transform:translate(0,0)}50%{transform:translate(40px,-30px)}}
+
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+  a{color:inherit;text-decoration:none}
+
+  .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+  .reveal.in{opacity:1;transform:none}
+
+  header{padding:76px 0 30px;display:grid;grid-template-columns:auto 1fr;gap:28px;align-items:center}
+  .avatar{
+    width:120px;height:120px;border-radius:50%;flex-shrink:0;
+    display:flex;align-items:center;justify-content:center;
+    font-family:"Space Grotesk",sans-serif;font-weight:700;font-size:42px;color:#080B14;
+    background:conic-gradient(from 210deg,var(--cyan),var(--violet),var(--amber),var(--cyan));
+    box-shadow:0 0 0 4px rgba(255,255,255,.06), 0 12px 40px rgba(139,92,246,.35);
+    position:relative;overflow:hidden;
+  }
+  .avatar img{width:100%;height:100%;object-fit:cover;border-radius:50%}
+  .eyebrow{
+    font-family:"JetBrains Mono",monospace;font-size:12px;letter-spacing:.16em;
+    text-transform:uppercase;color:var(--cyan);margin-bottom:12px;
+  }
+  h1{
+    font-family:"Space Grotesk",sans-serif;font-weight:700;
+    font-size:clamp(34px,6vw,54px);line-height:1.03;letter-spacing:-.02em;
+    background:linear-gradient(120deg,#fff 20%,#bcd0ff 60%,var(--cyan));
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+  }
+  .role{font-family:"Space Grotesk",sans-serif;font-weight:500;font-size:clamp(15px,2.6vw,19px);color:var(--amber);margin-top:8px}
+  .tagline{max-width:640px;margin-top:16px;color:var(--muted);font-size:16.5px}
+  .links{display:flex;flex-wrap:wrap;gap:11px;margin-top:24px}
+  .btn{
+    display:inline-flex;align-items:center;gap:8px;padding:10px 16px;
+    border:1px solid var(--panel-brd);border-radius:999px;
+    font-family:"JetBrains Mono",monospace;font-size:12.5px;
+    background:var(--panel);backdrop-filter:blur(8px);
+    transition:border-color .2s,transform .2s,background .2s;
+  }
+  .btn:hover{border-color:var(--cyan);transform:translateY(-1px)}
+  .btn.primary{background:linear-gradient(120deg,var(--cyan),var(--violet));border:none;color:#080B14;font-weight:500}
+
+  .flow{
+    margin:30px 0 6px;padding:26px 20px;border:1px solid var(--panel-brd);
+    border-radius:var(--radius);background:var(--panel);backdrop-filter:blur(8px);
+  }
+  .flow-cap{font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:16px;text-align:center}
+  .flow-row{display:grid;grid-template-columns:repeat(4,1fr);gap:0;position:relative}
+  .node{display:flex;flex-direction:column;align-items:center;text-align:center;position:relative;z-index:2}
+  .node .disc{
+    width:56px;height:56px;border-radius:16px;display:flex;align-items:center;justify-content:center;
+    font-size:24px;background:rgba(255,255,255,.05);border:1px solid var(--panel-brd);
+    box-shadow:inset 0 0 20px rgba(34,211,238,.08);
+  }
+  .node .nlabel{font-family:"Space Grotesk",sans-serif;font-weight:600;font-size:14px;margin-top:10px}
+  .node .nnote{font-family:"JetBrains Mono",monospace;font-size:10.5px;color:var(--muted);margin-top:3px}
+  .flow-svg{position:absolute;top:28px;left:0;width:100%;height:4px;z-index:1;overflow:visible}
+
+  .metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:13px;margin:22px 0}
+  .metric{background:var(--panel);border:1px solid var(--panel-brd);border-radius:var(--radius);padding:18px 15px;backdrop-filter:blur(8px)}
+  .metric .n{font-family:"Space Grotesk",sans-serif;font-weight:700;font-size:25px;
+    background:linear-gradient(120deg,var(--cyan),var(--amber));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .metric .l{font-family:"JetBrains Mono",monospace;font-size:11px;color:var(--muted);margin-top:5px;letter-spacing:.03em}
+
+  section{padding:48px 0}
+  .sec-label{font-family:"JetBrains Mono",monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--cyan);display:flex;align-items:center;gap:12px;margin-bottom:28px}
+  .sec-label::after{content:"";flex:1;height:1px;background:var(--panel-brd)}
+
+  .pipe{position:relative;padding-left:30px}
+  .pipe::before{content:"";position:absolute;left:7px;top:6px;bottom:6px;width:2px;background:linear-gradient(var(--cyan),var(--violet),var(--amber))}
+  .stage{position:relative;padding-bottom:32px}
+  .stage:last-child{padding-bottom:0}
+  .stage::before{content:"";position:absolute;left:-30px;top:5px;width:16px;height:16px;border-radius:50%;background:var(--bg);border:2px solid var(--cyan)}
+  .stage.now::before{background:var(--amber);border-color:var(--amber);box-shadow:0 0 0 5px rgba(251,191,36,.16)}
+  .stage .top{display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px;align-items:baseline}
+  .stage h3{font-family:"Space Grotesk",sans-serif;font-size:18px;font-weight:600}
+  .stage .when{font-family:"JetBrains Mono",monospace;font-size:12px;color:var(--muted)}
+  .stage .org{color:var(--amber);font-size:14px;margin-top:2px;font-weight:500}
+  .clients{margin-top:12px;display:flex;flex-direction:column;gap:12px}
+  .cname{font-family:"JetBrains Mono",monospace;font-size:11px;color:var(--muted);letter-spacing:.03em;text-transform:uppercase}
+  .clients ul{list-style:none;margin-top:6px;display:flex;flex-direction:column;gap:6px}
+  .clients li{position:relative;padding-left:18px;color:#C7CDDC;font-size:14.5px}
+  .clients li::before{content:"\25B9";position:absolute;left:0;color:var(--cyan)}
+
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+  .card{background:var(--panel);border:1px solid var(--panel-brd);border-radius:var(--radius);padding:22px;backdrop-filter:blur(8px);transition:border-color .2s,transform .2s}
+  .card:hover{border-color:var(--cyan);transform:translateY(-2px)}
+  .card .emoji{font-size:26px}
+  .card h4{font-family:"Space Grotesk",sans-serif;font-size:17px;font-weight:600;margin:10px 0 8px}
+  .card p{color:var(--muted);font-size:14.5px}
+
+  .skillset{display:flex;flex-direction:column;gap:18px}
+  .skillrow .cat{font-family:"JetBrains Mono",monospace;font-size:11px;color:var(--muted);letter-spacing:.06em;text-transform:uppercase;margin-bottom:10px}
+  .tags{display:flex;flex-wrap:wrap;gap:8px}
+  .tag{padding:6px 12px;border:1px solid var(--panel-brd);border-radius:9px;background:var(--panel);font-size:13px;font-family:"JetBrains Mono",monospace;transition:border-color .2s,color .2s}
+  .tag:hover{border-color:var(--violet);color:#fff}
+
+  .certs{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .cert{display:flex;gap:10px;align-items:flex-start;font-size:14px;color:#C7CDDC}
+  .cert span{color:var(--cyan);flex-shrink:0}
+
+  footer{padding:50px 0 70px;border-top:1px solid var(--panel-brd);margin-top:16px;color:var(--muted)}
+  footer .fname{font-family:"Space Grotesk",sans-serif;color:var(--text);font-size:18px;font-weight:600}
+  .foot-links{display:flex;gap:18px;margin-top:12px;flex-wrap:wrap;font-family:"JetBrains Mono",monospace;font-size:12.5px}
+  .foot-links a:hover{color:var(--cyan)}
+
+  @media (max-width:660px){
+    header{grid-template-columns:1fr;text-align:left}
+    .metrics{grid-template-columns:1fr 1fr}
+    .grid2,.certs{grid-template-columns:1fr}
+    .flow-row{grid-template-columns:1fr 1fr;gap:22px 0}
+    .flow-svg{display:none}
+  }
+  @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+  :focus-visible{outline:2px solid var(--cyan);outline-offset:3px;border-radius:4px}
+</style>
+</head>
+<body>
+<div class="aurora"><span class="a"></span><span class="b"></span><span class="c"></span></div>
+<div class="wrap" id="app"></div>
+
+<script>
+  const P = DATA.profile;
+  const esc = s => String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+  const avatar = P.photoUrl
+    ? '<div class="avatar"><img src="'+esc(P.photoUrl)+'" alt="'+esc(P.name)+'"></div>'
+    : '<div class="avatar">'+esc(P.initials)+'</div>';
+
+  const flowNodes = DATA.pipeline.map(s=>
+    '<div class="node"><div class="disc">'+s.icon+'</div><div class="nlabel">'+esc(s.label)+'</div><div class="nnote">'+esc(s.note)+'</div></div>').join("");
+
+  const metrics = DATA.metrics.map(m=>
+    '<div class="metric"><div class="n">'+esc(m.n)+'</div><div class="l">'+esc(m.l)+'</div></div>').join("");
+
+  const experience = DATA.experience.map(e=>
+    '<div class="stage '+(e.now?'now':'')+' reveal"><div class="top"><h3>'+esc(e.title)+'</h3><div class="when">'+esc(e.when)+'</div></div><div class="org">'+esc(e.org)+'</div>'+
+    (e.clients.length?'<div class="clients">'+e.clients.map(c=>
+      '<div><div class="cname">'+esc(c.name)+'</div><ul>'+c.points.map(p=>'<li>'+esc(p)+'</li>').join("")+'</ul></div>').join("")+'</div>':'')+
+    '</div>').join("");
+
+  const projects = DATA.projects.map(p=>
+    '<div class="card reveal"><div class="emoji">'+p.emoji+'</div><h4>'+esc(p.title)+'</h4><p>'+esc(p.desc)+'</p></div>').join("");
+
+  const skills = DATA.skills.map(s=>
+    '<div class="skillrow"><div class="cat">'+esc(s.cat)+'</div><div class="tags">'+s.items.map(i=>'<span class="tag">'+esc(i)+'</span>').join("")+'</div></div>').join("");
+
+  const certs = DATA.certs.map(c=>'<div class="cert"><span>\u2713</span> '+esc(c)+'</div>').join("");
+
+  document.getElementById("app").innerHTML =
+    '<header class="reveal">'+avatar+
+      '<div><div class="eyebrow">Data Engineer · AI in progress</div>'+
+      '<h1>'+esc(P.name)+'</h1>'+
+      '<div class="role">'+esc(P.role)+'</div>'+
+      '<p class="tagline">'+esc(P.tagline)+'</p>'+
+      '<div class="links">'+
+        '<a class="btn primary" href="mailto:'+esc(P.email)+'">\u2709 Email me</a>'+
+        '<a class="btn" href="'+esc(P.linkedin)+'" target="_blank" rel="noopener">in · LinkedIn</a>'+
+        '<a class="btn" href="'+esc(P.github)+'" target="_blank" rel="noopener">\u25c6 GitHub</a>'+
+      '</div></div></header>'+
+
+    '<div class="flow reveal"><div class="flow-cap">— what I do with data —</div><div class="flow-row">'+
+      '<svg class="flow-svg" preserveAspectRatio="none" viewBox="0 0 100 4">'+
+        '<line x1="0" y1="2" x2="100" y2="2" stroke="rgba(255,255,255,.12)" stroke-width="1"/>'+
+        '<circle r="1.6" fill="#22D3EE"><animate attributeName="cx" from="0" to="100" dur="3s" repeatCount="indefinite"/></circle>'+
+        '<circle r="1.6" fill="#8B5CF6"><animate attributeName="cx" from="0" to="100" dur="3s" begin="1s" repeatCount="indefinite"/></circle>'+
+        '<circle r="1.6" fill="#FBBF24"><animate attributeName="cx" from="0" to="100" dur="3s" begin="2s" repeatCount="indefinite"/></circle>'+
+      '</svg>'+flowNodes+'</div></div>'+
+
+    '<div class="metrics reveal">'+metrics+'</div>'+
+
+    '<section id="experience"><div class="sec-label reveal">Experience</div><div class="pipe">'+experience+'</div></section>'+
+    '<section id="projects"><div class="sec-label reveal">Selected Projects</div><div class="grid2">'+projects+'</div></section>'+
+    '<section id="skills"><div class="sec-label reveal">Toolkit</div><div class="skillset reveal">'+skills+'</div></section>'+
+    '<section id="certs"><div class="sec-label reveal">Certifications</div><div class="certs reveal">'+certs+'</div></section>'+
+
+    '<footer class="reveal"><div class="fname">'+esc(P.name)+'</div><div>Data & AI Engineer · '+esc(P.location)+'</div>'+
+      '<div class="foot-links"><a href="mailto:'+esc(P.email)+'">'+esc(P.email)+'</a>'+
+      '<a href="'+esc(P.linkedin)+'" target="_blank" rel="noopener">LinkedIn</a>'+
+      '<a href="'+esc(P.github)+'" target="_blank" rel="noopener">GitHub</a></div></footer>';
+
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add("in"); io.unobserve(e.target); } });
+  },{threshold:.12});
+  document.querySelectorAll(".reveal").forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
